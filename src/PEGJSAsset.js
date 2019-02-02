@@ -1,4 +1,4 @@
-const peg = require('pegjs-dev');
+const peg = require('pegjs');
 const { Asset } = require('parcel-bundler');
 
 class PEGJSAsset extends Asset {
@@ -9,7 +9,7 @@ class PEGJSAsset extends Asset {
   async parse(code) {
     return {
       source: peg.generate(code, {
-        format: 'es',
+        format: 'commonjs',
         output: 'source',
       })
     };

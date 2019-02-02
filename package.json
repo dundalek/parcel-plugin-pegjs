@@ -21,8 +21,8 @@
     "url": "https://github.com/jtenner/parcel-plugin-pegjs/issues"
   },
   "homepage": "https://github.com/jtenner/parcel-plugin-pegjs#readme",
-  "dependencies": {
+  "peerDependencies": {
     "parcel-bundler": "^1.0.0",
-    "pegjs-dev": "^0.11.0-dev"
+    "pegjs": "^0.10.0"
   }
 }
